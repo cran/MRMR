@@ -1,0 +1,28 @@
+\name{plotTriangle}
+\alias{plotTriangle}
+\title{plot.Triangle}
+\usage{
+  plotTriangle(objTriangle, Response, Predictor,
+    Group = "OriginPeriodStart", Lines = TRUE,
+    FitLines = FALSE)
+}
+\arguments{
+  \item{objTriangle}{A triangle object}
+
+  \item{Response}{The measure being plotted}
+
+  \item{Predictor}{The variable used to predict the
+  response}
+
+  \item{Group}{The name of the group column used to group
+  the data. The default is OriginPeriodStart}
+
+  \item{Lines}{Draw lines to connect the observations?}
+
+  \item{FitLines}{Draw a line of best fit? Note that fit
+  lines will have an intercept}
+}
+\description{
+  plot.Triangle
+}
+
