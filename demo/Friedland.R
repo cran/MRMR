@@ -6,11 +6,11 @@ plotTriangle(Friedland, Predictor = "DevInteger", Response = "CumulativePaid")
 plotTriangle(Friedland, Predictor = "DevInteger", Response = "IncrementalPaid")
 plotTriangle(Friedland, Predictor = "EvaluationDate", Response = "IncrementalPaid")
 
-plot(Friedland, Predictor = "CumulativePaid", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE)
-plot(Friedland, Predictor = "CumulativePaid", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE, FitLines = TRUE)
-plot(Friedland, Predictor = "EP", Response ="IncrementalPaid", Lines = FALSE)
-plot(Friedland, Predictor = "EP", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE)
-plot(Friedland, Predictor = "EP", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE, FitLines = TRUE)
+plotTriangle(Friedland, Predictor = "CumulativePaid", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE)
+plotTriangle(Friedland, Predictor = "CumulativePaid", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE, FitLines = TRUE)
+plotTriangle(Friedland, Predictor = "EP", Response ="IncrementalPaid", Lines = FALSE)
+plotTriangle(Friedland, Predictor = "EP", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE)
+plotTriangle(Friedland, Predictor = "EP", Response ="IncrementalPaid", Group = "DevInteger", Lines = FALSE, FitLines = TRUE)
 
 PaidAM1 = newTriangleModel(Triangle = Friedland, Response = "IncrementalPaid", Predictor = "EP", FitCategory = "DevInteger", Tail = 6)
 
